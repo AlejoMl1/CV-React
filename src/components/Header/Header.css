@@ -1,0 +1,63 @@
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: #f4f7ff;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+    /* If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.  */
+    z-index: 1;
+}
+
+
+.menu {
+    display: flex
+}
+
+.menu li a {
+    padding: 10px 15px;
+    color: #6c707c;
+    font-size: 12px;
+}
+
+.lang {
+    color: #292929;
+
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #292929;
+    font-family: Poppins;
+}
+
+.toggle {
+    display: none;
+}
+
+.menu li a:hover,
+.active {
+    background-color: #292929;
+    /* The !important rule in CSS is used to add more importance to a property/value than normal.
+In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element! */
+    color: #ffffffff !important;
+    font-weight: 600;
+    transition: all ease 0.5s;
+}
