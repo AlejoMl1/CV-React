@@ -2,6 +2,7 @@ import React from "react";
 import './Modal.css'
 
 const Modal = ({ children, isOpen, closeModal }) => {
+  // https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_stoppropagation
   const handleModalContainerClick = (e) => e.stopPropagation();
   return (
     <article onClick={closeModal} className={`modal ${isOpen && "is-open"}`}>

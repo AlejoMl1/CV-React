@@ -1,4 +1,6 @@
 import React from "react";
+import './Project.css';
+
 const Project = ({
   proyectTile: projectTitle,
   proyectDesc: projectDesc,
@@ -34,12 +36,18 @@ const Project = ({
         </div>
        
         <div className="link-container">
-          <button href={urlPage} target="__blank" className="btn btn_primary">
+          {/* <button       onClick={(e) => {
+      e.preventDefault();
+      window.location.href=`$${urlPage}`;
+      }} type="button" target="__blank" className="btn btn_primary">
             {btnPage ? btnPage : <p>Visit Page</p>}
-          </button>
-          <button href={urlRepo} target="__blank" className="btn btn_secundary">
+          </button> */}
+      
+      <a target="_blank" href={urlPage}> <button className="btn btn_primary" >Visit Page</button> </a>
+      <a target="_blank" href={urlRepo}> <button className="btn btn_primary" >View Code Github</button> </a>
+          {/* <button href={urlRepo} target="__blank" className="btn btn_secundary">
             View Code
-          </button>
+          </button> */}
         </div>
     </div>
   );

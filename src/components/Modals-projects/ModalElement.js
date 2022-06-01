@@ -1,4 +1,5 @@
 import React from "react";
+import './ModalElement.css'
 
 const ModalElement = ({ image, e, imgTitle, imgDesc }) => {
   return (
