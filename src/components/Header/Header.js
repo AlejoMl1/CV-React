@@ -12,11 +12,11 @@ export default function Header() {
             <div className={styles.toggle}>
             </div>
             <ul className={styles.menu}>
-                <li> <a href="#main" className={styles.active}>Home</a>    </li>
-                <li> <a href="#about">About</a>    </li>
-                <li> <a href="#skills">Skills</a>    </li>
-                <li> <a href="#projects">Portfolio</a>    </li>
-                <li> <a href="#contact-form">Contact</a>    </li>
+                <li> <a href="/" className={styles.active}>Home</a>    </li>
+                <li> <a href="/aboutMe">About</a>    </li>
+                <li> <a href="/skills">Skills</a>    </li>
+                <li> <a href="/portfolio">Portfolio</a>    </li>
+                <li> <a href="/portfolio">Contact</a>    </li>
             </ul>
             <a href="#" className={styles.lang}>En</a>
     </nav>

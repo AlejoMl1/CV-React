@@ -1,0 +1,8 @@
+.App{
+    overflow-y:scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.FirstSection{
+    scroll-snap-align: start;
+}

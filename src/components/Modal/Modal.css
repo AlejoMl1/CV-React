@@ -46,6 +46,7 @@
   width: min(550px,80vw);
   border-radius: 16px;
   height: 90vh;
+  
   max-height: 700px;
   display: flex;
   /* width: 80%; */
