@@ -54,46 +54,35 @@ a {
 
 .menu li a:hover {
     background-color: #292929;
-    /* The !important rule in CSS is used to add more importance to a property/value than normal.
-In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element! */
     color: #ffffffff !important;
     font-weight: 600;
-    // transition: all ease 0.3s;
 }
 
-// .home-false{
-//     background:blue;
-// }
 .home-true{
     background-color: #292929;
-    /* The !important rule in CSS is used to add more importance to a property/value than normal.
-In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element! */
     color: #ffffffff !important;
     font-weight: 600;
 }
-// .about-false{
-//     background:blue;
-// }
+
 .about-true{
     background-color: #292929;
-    /* The !important rule in CSS is used to add more importance to a property/value than normal.
-In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element! */
     color: #ffffffff !important;
     font-weight: 600;
 }
 
 .skills-true{
     background-color: #292929;
-    /* The !important rule in CSS is used to add more importance to a property/value than normal.
-In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element! */
     color: #ffffffff !important;
     font-weight: 600;
 }
 
+.about-true{
+    background-color: #292929;
+    color: #ffffffff !important;
+    font-weight: 600;
+}
 .portfolio-true{
     background-color: #292929;
-    /* The !important rule in CSS is used to add more importance to a property/value than normal.
-In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element! */
     color: #ffffffff !important;
     font-weight: 600;
 }

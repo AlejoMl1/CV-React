@@ -5,11 +5,11 @@ import "./Projects.css";
 function Projects() {
   return (
     <section className="s-portfolio target-section">
-       <div className="portfolio__header">
+       {/* <div className="portfolio__header">
           <h3 className="font-500">
                 Portfolio
           </h3>
-       </div>
+       </div> */}
       
       {/* 
         <div className="column large-12">

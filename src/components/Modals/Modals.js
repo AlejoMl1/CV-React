@@ -6,6 +6,9 @@ import { useModal } from '../Modal/useModal';
 import ModalElement from "../Modals-projects/ModalElement";
 import Modal01 from "../../assets/images/Projects_screenshot/miniatura-learnzilla.png";
 import Project01 from "../Modals-projects/Project01";
+
+import Modal02 from "../../assets/images/Projects_screenshot/foodmini.png";
+import Project02 from "../Modals-projects/Project02";
 // import Modal02 from "../assets/image/screenshot/spacebadges-def.jpg";
 // import Proyect02 from "./modals/Proyect02";
 // // import Modal03 from "../assets/image/screenshot/product-app-def.jpg";
@@ -27,7 +30,7 @@ import Project01 from "../Modals-projects/Project01";
 
 const Modals = () => {
   const [isOpenModal1, openModal1, closeModal1] = useModal(false);
-  // const [isOpenModal2, openModal2, closeModal2] = useModal(false);
+  const [isOpenModal2, openModal2, closeModal2] = useModal(false);
   // // const [isOpenModal3, openModal3, closeModal3] = useModal(false);
   // const [isOpenModal4, openModal4, closeModal4] = useModal(false);
   // const [isOpenModal5, openModal5, closeModal5] = useModal(false);
@@ -63,12 +66,21 @@ const Modals = () => {
         image={Modal01}
         e={openModal1}
         imgTitle="Learnzilla Academy"
-        imgDesc="Virtual Academy"
+        imgDesc="Plataform to teach and learn about any topic"
       />
       <Modal isOpen={isOpenModal1} closeModal={closeModal1}>
         <Project01 />
       </Modal>
 
+      <ModalElement
+        image={Modal02}
+        e={openModal2}
+        imgTitle="Food App"
+        imgDesc="Search and create recipes"
+      />
+      <Modal isOpen={isOpenModal2} closeModal={closeModal2}>
+        <Project02 />
+      </Modal>
       {/* <ModalElement
         image={Modal02}
         e={openModal2}
