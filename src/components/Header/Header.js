@@ -2,21 +2,25 @@
 import React from 'react'
 // import './Header.css' 
 import styles from './Header.module.scss';
-
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
     <nav className={styles.main}> 
             {/* <!-- Logo  --> */}
-            <a href="#" className={styles.logo}>AML</a>
+            <Link to="/" > <a className={styles.logo}>AML</a> </Link>
             <div className={styles.toggle}>
             </div>
             <ul className={styles.menu}>
-                <li> <a href="/" className={styles.active}>Home</a>    </li>
-                <li> <a href="/aboutMe">About</a>    </li>
-                <li> <a href="/skills">Skills</a>    </li>
-                <li> <a href="/portfolio">Portfolio</a>    </li>
-                <li> <a href="/portfolio">Contact</a>    </li>
+                <li> 
+                  <Link to="/" >
+                    <a  className={styles.active}>Home</a>
+                  </Link>    
+                </li>
+                <li>  <Link to="/aboutMe" > <a >About</a></Link> </li>
+                <li> <Link to="/skills" ><a>Skills</a> </Link></li>
+                <li> <Link to="/portfolio" ><a>Portfolio</a> </Link>    </li>
+                {/* <li> <a href="/portfolio">Contact</a>    </li> */}
             </ul>
             <a href="#" className={styles.lang}>En</a>
     </nav>

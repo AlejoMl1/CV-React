@@ -2,17 +2,19 @@
   /* background: url("../../assets/image/stars.svg"), #e5e5e5; */
   /* background-repeat: repeat; */
   /* background-color: aqua; */
-  height: 100vh;
+  height: 110vh;
   background-color: black;
   color: white;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: row; */
+  margin-top: min(10vh,75px);
+  padding-top: 30px;
 }
 
 .s-portfolio.target-section h3 {
 
-  width:170px;
-  font-size: 40px;
+  width:min(170px,13vw);
+  font-size: min(4.7vh,40px);
   font-family: poppins;
   text-align: center;
   color: #ffffffff;

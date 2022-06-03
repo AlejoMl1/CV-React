@@ -21,7 +21,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       gap:40px;
-      padding:0 55px;
+      padding:0 min(180px,15vw);
       padding-top: min(20vh,110px);
       padding-bottom: 50px;
       text-align: center;

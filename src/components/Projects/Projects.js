@@ -4,14 +4,18 @@ import "./Projects.css";
 
 function Projects() {
   return (
-    <section id="portfolio" className="s-portfolio target-section">
-      <div className="row s-portfolio__header">
-        <div className="column large-12">
+    <section className="s-portfolio target-section">
+       <div className="portfolio__header">
           <h3 className="font-500">
-            Portfolio
+                Portfolio
           </h3>
+       </div>
+      
+      {/* 
+        <div className="column large-12">
+         
         </div>
-      </div>
+      </div> */}
       <Modals />
     </section>
 );

@@ -18,9 +18,9 @@ export default function FirstSection() {
                 <p>Hello</p>
                 <h1>I'm <font color="#17d1ac">Alejandro</font>  Muñoz Labrador</h1>
                 <img src={amlCircle} alt="author"/>
-                <p className={styles.details}> Front-end Developer, Engineer, Entrepreneur</p>
+                <p className={styles.details}> Fullstack Developer, Engineer, Entrepreneur</p>
                 {/* <!-- cv btn  --> */}
-                <a href="./Documents/Alejandro_Munoz_CV_Front-end-English.pdf" className={styles.cvbtn}> Download Cv</a>
+                <a href="./Documents/Alejandro_Munoz_CV_Front-end-English.pdf" download className={styles.cvbtn}> Download Cv</a>
 
             </div>
             <div className={styles.social}>
