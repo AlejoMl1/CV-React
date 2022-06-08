@@ -1,3 +1,5 @@
+@import './HeaderSmall.module.scss';
+
 ul {
     list-style: none;
 }
@@ -34,6 +36,7 @@ a {
     padding: 10px 15px;
     color: #6c707c;
     font-size: 12px;
+    
 }
 
 .lang {
@@ -52,10 +55,17 @@ a {
     display: none;
 }
 
-.menu li a:hover {
-    background-color: #292929;
-    color: #ffffffff !important;
+.menu li:hover {
+    // background-color: #292929;
+    width:50%;
+    // height:3vh;
     font-weight: 600;
+    transform:scale(1.25);
+    transition: 0.2s;
+    a{
+        color: #17d1ac;
+
+    }
 }
 
 .home-true{

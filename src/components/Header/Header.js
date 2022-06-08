@@ -2,7 +2,10 @@
 import React, {useState} from 'react'
 // import './Header.css' 
 import styles from './Header.module.scss';
+// import stylesSmall from './HeaderSmall.module.scss';
 import { Link } from 'react-router-dom';
+// const styles = {...stylesBig, ...stylesSmall };
+
 
 export default function Header() {
   const [style, setStyle] = useState({

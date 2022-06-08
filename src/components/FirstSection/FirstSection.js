@@ -20,7 +20,7 @@ export default function FirstSection() {
                 <img src={amlCircle} alt="author"/>
                 <p className={styles.details}> Fullstack Developer, Engineer, Entrepreneur</p>
                 {/* <!-- cv btn  --> */}
-                <a href="./Documents/Alejandro_Munoz_CV_Front-end-English.pdf" download className={styles.cvbtn}> Download Cv</a>
+                <a href="./../../assets/cvpdf/src\assets\cvpdf\Alejandro_Munoz_CV_Fullstack-English.pdf" download className={styles.cvbtn}> Download Cv</a>
 
             </div>
             <div className={styles.social}>

@@ -16,7 +16,7 @@ const urlVideo = 'https://www.youtube.com/embed/jaGqyXIisSQ'
   return (
     <Project
       // srcImg={image}
-      proyectTile="Learnzilla"
+      proyectTile="Let's cook"
      
       proyectDesc= {  <div><p>This single page application was created with React-Redux in the Front-end and in the Back-end the data of the recipes was fetched from spooncular API and saved in a local DB using Postgres and Squelize.</p> <p> The app is capable of searching through the different titles and types of recipes, also the user can add custom recipes to the database. </p>  
       
