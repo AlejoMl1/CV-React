@@ -8,17 +8,14 @@ export default function AboutMe() {
         <div className={styles['about-text']}>
             <h1>About Me</h1>
             <div className={styles['about-general']}>
-                <p className="first-p"> During my BSc in civil Engineering , I wrote my first lines of code in Visual Basic and quickly discovered my passion to resolve problems though algorithms. </p>
+                <p className="first-p"> After completing my BSc in civil Engineering, I embarked on a transformative journey in web development. Through an immersive bootcamp experience, I dedicated over 800 hours to mastering a wide range of essential technologies, including React, Redux, JavaScript, SQL, Sequelize, HTML,  and CSS.  </p>
+                    
                     <p>
-                    Front-end and Back-end Web development calls to all my passions; it incorporates creativity and problem solving.  </p>
-                    <p>
-                    When I finished my degree I decided to turn my passion into my career and started my path as a web developer, after more than 800 + hours of coding in Henry's bootcamp I've learned how to implement within real projects a wide range of technologies such as : React-Redux, JavaScript, Node Js, SQL, Sequelize , HTML, CSS among many others.
+                    In my first job I worked as a backend developer, I specialized in harnessing the power of Node.js with TypeScript. This expertise enabled me to create secure and efficient Lambda functions, each equipped with its own URL and fortified by JSON Web Tokens (JWTs) for enhanced security measures. Additionally, I upheld the reliability of RESTful APIs by diligently conducting comprehensive unit testing using Jest.
                     </p>
-                    {/* <p>
-                    However this is just the beginning in this new path, I love coding everyday and eager to expand my knowledge learning new technology that involves Front and Back-end development.
-                    </p> */}
                     <p>
-                    I would like to be part of a team where I can keep growing in the IT world. </p>
+                    I am eager to join a dynamic team where I can contribute my technical expertise to develop innovative solutions.
+                    </p>
             </div>
             
         </div>
