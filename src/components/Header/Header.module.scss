@@ -1,4 +1,3 @@
-@import './HeaderSmall.module.scss';
 
 @media only screen and (min-width: 768px) {
     ul {
@@ -37,7 +36,6 @@
         padding: 10px 15px;
         color: #6c707c;
         font-size: 12px;
-        
     }
     
     .lang {
@@ -97,6 +95,5 @@
         color: #ffffffff !important;
         font-weight: 600;
     }
-
-
 }
+@import './HeaderSmall.module.scss';

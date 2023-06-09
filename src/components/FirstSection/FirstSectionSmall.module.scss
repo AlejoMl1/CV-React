@@ -29,7 +29,6 @@
     align-self: center;
     grid-template-rows: repeat;
     overflow: hidden;
- 
     /* !* to practice transform */
     /* https://www.youtube.com/watch?v=rzD-cPhq02E */
     /* the first argument is the X direction and the second the Y direction */
@@ -51,10 +50,7 @@
     grid-column: 2/3;
     grid-row: 4/8;
     overflow: hidden;
-    
   }
-
-
 
   .name_right {
     display: none;
