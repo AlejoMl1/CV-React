@@ -9,29 +9,15 @@ const urlRepo = "https://github.com/AlejoMl1/tic-toc-toe-react";
 
 // https://youtu.be/jaGqyXIisSQ
 // https://www.youtube.com/watch?v=BUOpXTn6vc4
-const urlVideo = "https://www.youtube.com/embed/jaGqyXIisSQ";
+const urlVideo = "https://youtube.com/embed/Vmy_tGMwWg8";
 
 const Project02 = () => {
   return (
     <Project
       // srcImg={image}
-      proyectTile="Let's cook"
+      proyectTile="Tic tac toe"
       proyectDesc={
-        <div>
-          <p>
-            This single page application was created with React-Redux in the
-            Front-end and in the Back-end the data of the recipes was fetched
-            from spooncular API and saved in a local DB using Postgres and
-            Squelize.
-          </p>{" "}
-          <p>
-            {" "}
-            The app is capable of searching through the different titles and
-            types of recipes, also the user can add custom recipes to the
-            database.{" "}
-          </p>
-          <p>For further details please read the readme of the project.</p>{" "}
-        </div>
+        <div>Classic tic toc toe made with React, CSS and node Js.</div>
       }
       tecn="Tecnologías utilizadas: HTML, CSS, JavaScript, Figma, Git/Github."
       urlPage={urlPage}

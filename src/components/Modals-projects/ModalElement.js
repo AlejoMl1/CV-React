@@ -1,5 +1,5 @@
 import React from "react";
-import './ModalElement.css'
+import "./ModalElement.css";
 
 const ModalElement = ({ image, e, imgTitle, imgDesc }) => {
   return (
@@ -8,9 +8,7 @@ const ModalElement = ({ image, e, imgTitle, imgDesc }) => {
         <h6>{imgTitle}</h6>
         <p className="modal-description">{imgDesc}</p>
         <a className="folio-item__thumb" onClick={e}>
-          <div className="folio-item__thumb">
-            <img src={image} alt="image" className="modal__image" />
-          </div>
+          <img src={image} alt="image" className="modal__image" />
         </a>
       </div>
     </div>

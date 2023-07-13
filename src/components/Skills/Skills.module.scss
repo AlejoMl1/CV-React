@@ -3,45 +3,44 @@
       height: 100vh;
       width:100%;
       font-family: Poppins;
-      // margin-left: auto;
-      // margin-right: auto;
-     
-      // font-size: 30px;
-      // display:flex;
-      // box-sizing: border-box;
       overflow-x: hidden;
-      // flex-wrap: wrap;
       margin: 0 ;
-      
-      // margin-bottom: 20px;
     }
 
     .skillsGrid{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      gap:40px;
-      padding:0 min(180px,15vw);
-      padding-top: min(20vh,110px);
+      gap:min(5vw,40px);
+      // padding:0 min(220px,11vw);
+      padding: 0 min(320px, 13vw);
+      padding-top: min(12vw,190px);
       padding-bottom: 50px;
       text-align: center;
       justify-content: center;
       align-items: center;
-    
-      // display: grid;
-      // grid-template-columns: repeat(5, 1fr);
-      // // grid-template-rows: repeat(5, 1fr);
-      // gap: 60px;
-      // grid-auto-rows: auto;
-     
-      // margin-top: 100px;
-      
-      // overflow: hidden;
-      // background-color: red;
+      box-sizing: border-box;
+      overflow: hidden;
+  
     }
-  // .skillsGrid img {
-  //   height: 120px;
-  //   width: 120px;
-  // }
+
   
+@media only screen and (max-width: 767px) {
+
+  .skillsGrid {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 3vh;
+      padding: 0 5vw;
+      padding-top: 18vh;
+      padding-bottom: 50px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      overflow: hidden;
   
+    }
+
+}
