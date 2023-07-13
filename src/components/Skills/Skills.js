@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Skill from "../Skill";
 import styles from "./Skills.module.scss";
 
@@ -33,37 +33,37 @@ export default function Skills() {
       source: `${baseUrl}github/github-original-wordmark.svg`,
       alt: "The logo icon for GitHub",
       title: "GitHub",
-      technology: "Frontend",
+      technology: "Version control",
     },
     {
       source: `${baseUrl}npm/npm-original-wordmark.svg`,
       alt: "The logo icon for NPM",
       title: "npm",
-      technology: "Frontend",
+      technology: "Version control",
     },
     {
       source: `${baseUrl}nodejs/nodejs-original-wordmark.svg`,
       alt: "The logo icon for NodeJS",
       title: "Node JS",
-      technology: "Frontend",
+      technology: "Backend",
     },
     {
       source: `${baseUrl}javascript/javascript-original.svg`,
       alt: "JavaScript",
       title: "JavaScript",
-      technology: "Frontend",
+      technology: "Language",
     },
     {
       source: `${baseUrl}mysql/mysql-original-wordmark.svg`,
       alt: "MySQL",
       title: "MySQL",
-      technology: "Frontend",
+      technology: "Backend",
     },
     {
       source: `${baseUrl}heroku/heroku-original-wordmark.svg`,
       alt: "Heroku",
       title: "Heroku",
-      technology: "Frontend",
+      technology: "Backend",
     },
     {
       source: `${baseUrl}jquery/jquery-original.svg`,
@@ -75,7 +75,7 @@ export default function Skills() {
       source: `${baseUrl}postgresql/postgresql-original.svg`,
       alt: "PostgreSQL",
       title: "PostgreSQL",
-      technology: "Frontend",
+      technology: "Backend",
     },
     {
       source: `${baseUrl}sass/sass-original.svg`,
@@ -87,31 +87,26 @@ export default function Skills() {
       source: `${baseUrl}typescript/typescript-original.svg`,
       alt: "TypeScript",
       title: "TypeScript",
-      technology: "Frontend",
+      technology: "Language",
     },
-    {
-      source: `${baseUrl}eslint/eslint-original-wordmark.svg`,
-      alt: "Eslint",
-      title: "ESLint",
-      technology: "Frontend",
-    },
+
     {
       source: `${baseUrl}python/python-original-wordmark.svg`,
       alt: "Python",
       title: "Python",
-      technology: "Frontend",
+      technology: "Language",
     },
     {
       source: `${baseUrl}amazonwebservices/amazonwebservices-original-wordmark.svg`,
       alt: "AWS",
       title: "AWS",
-      technology: "Frontend",
+      technology: "Backend",
     },
     {
       source: `${baseUrl}express/express-original-wordmark.svg`,
       alt: "Express",
       title: "Express",
-      technology: "Frontend",
+      technology: "Backend",
     },
     {
       source: `${baseUrl}jest/jest-plain.svg`,
@@ -120,28 +115,86 @@ export default function Skills() {
       technology: "Frontend",
     },
     {
+      source: `${baseUrl}jest/jest-plain.svg`,
+      alt: "Jest",
+      title: "Jest",
+      technology: "Backend",
+    },
+
+    {
+      source: `${baseUrl}php/php-original.svg`,
+      alt: "php",
+      title: "PHP",
+      technology: "Language",
+    },
+    {
       source: `${baseUrl}linux/linux-original.svg`,
       alt: "Linux",
       title: "Linux",
-      technology: "Frontend",
+      technology: "Language",
     },
   ];
-  return (
-    <div className={styles.skills}>
-      <div className={styles.skillsGrid}>
-        {listOfSkills.map((skill, index) => (
+  const [skillsToRender, setSkillsToRender] = useState("Language");
+
+  const handleSkillsClick = (technology) => {
+    setSkillsToRender(technology);
+  };
+
+  const mapSkills = (skillCategory) => {
+    return listOfSkills.map((skill, index) => {
+      if (skill.technology === skillCategory) {
+        return (
           <Skill
-            key={index}
+            key={index + skillCategory}
             source={skill.source}
             alt={skill.alt}
             title={skill.title}
             technology={skill.technology}
           />
-        ))}
+        );
+      }
+      return null;
+    });
+  };
+
+  return (
+    <div className={styles.skills}>
+      <div className={styles.skillsTitle}>
+        <h3
+          className={skillsToRender === "Language" ? styles.active : ""}
+          onClick={() => handleSkillsClick("Language")}
+        >
+          Languages
+        </h3>
+        <span />
+        <h3
+          className={skillsToRender === "Frontend" ? styles.active : ""}
+          onClick={() => handleSkillsClick("Frontend")}
+        >
+          Frontend
+        </h3>
+        <span />
+        <h3
+          className={skillsToRender === "Backend" ? styles.active : ""}
+          onClick={() => handleSkillsClick("Backend")}
+        >
+          Backend
+        </h3>
+        <span />
+        <h3
+          className={skillsToRender === "Version control" ? styles.active : ""}
+          onClick={() => handleSkillsClick("Version control")}
+        >
+          Version Control
+        </h3>
+        <span />
+      </div>
+      <div className={styles.skillsGrid}>
+        {skillsToRender === "Language" && mapSkills("Language")}
+        {skillsToRender === "Frontend" && mapSkills("Frontend")}
+        {skillsToRender === "Backend" && mapSkills("Backend")}
+        {skillsToRender === "Version control" && mapSkills("Version control")}
       </div>
     </div>
   );
-
-  // <img source="https://github.com/devicons/devicon/blob/master/icons/eslint/eslint-original-wordmark.svg" title="eslint" **alt="eslint" width="40" height="40"/>
-  // <img source="https://github.com/devicons/devicon/blob/master/icons/express/express-original.svg" title="express" **alt="express" width="40" height="40"/>
 }

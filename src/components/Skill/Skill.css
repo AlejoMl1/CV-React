@@ -1,15 +1,21 @@
 .main{
-    height:min(20%,130px);
-    width:min(20%, 130px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:min(25vw,140px);
+    width:min(25vw, 140px);
     border: rgb(116, 224, 224) solid 1px;
-    padding:3px;
+    /* padding:3px; */
     border-radius: 4vh;
-    background-color: rgb(232, 240, 237);
+    background-color: rgb(237, 244, 242);
+    overflow: hidden;
+    gap:10px;
 }
 
 
 .main h3{
-    font-size: min(1.5vh,16px);
+    font-size: min(1.2vw,14px);
     border:0;
     margin:0;
     padding:0;
@@ -21,10 +27,10 @@
     padding-bottom: 8%;
     height:40%;
     width:40%;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
-@media only screen and (max-width: 767px){
+/* @media only screen and (max-width: 767px){
 
 .main {
         height: 35%;
@@ -50,4 +56,4 @@
         width: 40%;
     }
 
-}
+} */
