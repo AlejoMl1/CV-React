@@ -1,60 +1,43 @@
 
 
 .about {
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 12vh auto;
+    width: 100vw;
     height: 100vh;
     overflow-y: auto;
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: black;
 }
 
 .about-text {
+    grid-column: 1/2;
+    grid-row: 2/3;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 55%;
-    height: 100%;
-    padding-right: 55px;
-    padding-left: 55px;
-    padding-top: min(290px,30vh);
+    padding: 6vh 4vw 4vw 6vh;
 }
 
 .about-text h1 {
     font-size: min(2.8vw,35px);
-    // font-size: min(26px,2vw);
     color: #17d1ac;
     font-family: Poppins;
 }
 
-/* Weight is if font is more or less bold.
-Size is height of font... */
-// .about-text h2 {
-//     font-size:min(4vw,30px);
-//     color: #ffffffff;
-//     font-weight: 400;
-// }
-
-.about-text h1,
-h2 {
-    margin: 0px;
-    padding: 0px;
-}
 
 .about-general{
-    margin-top: min(55px,4.5vw);
+    margin-top: min(70px,10vh);
+    p {
+            font-size: min(21px, 2vw);
+            color: rgba(251, 251, 251, 0.90);
+            letter-spacing: 2.4px;
+            text-align: justify;
+            text-justify: inter-word;
+            // margin-top: 10%;
+            margin-bottom: 2px;
+        }
 }
 
-
-.about-general p {
-    font-size: min(26px,2vw);
-    color: rgba(251, 251, 251, 0.90);
-    letter-spacing: 2.4px;
-    text-align: justify;
-    text-justify: inter-word;
-    // margin-top: 10%;
-    margin-bottom: 2px;
-}
 
 .first-p{
     padding-top: 700px;
@@ -65,21 +48,41 @@ h2 {
 }
 
 .about-model {
-    width: 45%;
-    height: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: center;
     overflow: hidden;
     box-sizing: border-box;
-    margin: 0 auto;
-    // 
-    padding-top: min(200px,25vh);
-    // padding-bottom: 5%;
-
+    // width: 45%;
+    // height: 100%;
+    // margin: 0 auto;
+    // padding-top: min(200px,25vh);
 }
 
 .about-model img {
-    width: min(32vw,580px);
-    height:min(66vh,640px);
-    padding-left: 60px;
-
+    width: min(34vw,500px);
+    height:min(65vh,500px);
+    padding: 8vh 0 min(10vh,30px) 40px;
 }
 @import './AboutMeSmall.module.scss';
+
+@media only screen and (min-height: 1100px){
+
+    .about-model {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            align-self: start;
+            overflow: hidden;
+            box-sizing: border-box;
+            // width: 45%;
+            // height: 100%;
+            // margin: 0 auto;
+            // padding-top: min(200px,25vh);
+        }
+    
+        .about-model img {
+            width: min(34vw, 500px);
+            height: min(65vh, 500px);
+            padding: 8vh 0 min(10vh, 30px) 40px;
+        }
+}

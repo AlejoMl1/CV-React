@@ -5,7 +5,7 @@
     height: 100vh;
     box-sizing: border-box;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content:center;
     /* padding: 50px 5% 0px 5%; */
     // overflow: hidden;
@@ -16,7 +16,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-right: 35px;
     padding-left: 35px;
-    padding-top: min(350px,33vh);
+    padding-top: 12vh;
     width: 100%;
 }
 
