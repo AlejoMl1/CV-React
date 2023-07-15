@@ -17,12 +17,15 @@ a {
     top: 0;
     left: 0;
     width: 100%;
+  
     box-sizing: border-box;
     padding: 10px 50px;
     background-color: #f4f7ff;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
     /* If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.  */
     z-index: 1;
+    height: 30vh;
+    background-color: #1d187c;
 }
 
 

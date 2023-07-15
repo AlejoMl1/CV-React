@@ -18,12 +18,13 @@ library.add(fab, faFacebook, faLinkedin, faGithub);
 export default function FirstSection() {
   return (
     <div className={styles.main}>
-      <div className={styles.name}>
+      <div className={styles.main_left}>
         <div className={styles.name_container}>
           <p>Hello</p>
           <h1>
-            I'm <font color="#17d1ac">Alejandro</font> Muñoz Labrador
+            I'm <font color="#17d1ac">Alejandro</font>
           </h1>
+          <h1>Muñoz Labrador</h1>
           <img src={amlCircle} alt="author" />
           <p className={styles.details}>
             {" "}
