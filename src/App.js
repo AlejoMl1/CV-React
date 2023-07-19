@@ -3,8 +3,9 @@ import { Routes, Route, HashRouter } from "react-router-dom";
 import FirstSection from "./components/FirstSection";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+// import Projects from "./components/Projects";
 import Layout from "./components/Layout";
+import Modals from "./components/Modals-aml/index";
 import "./App.css";
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
         <Route exact path="/" element={<FirstSection />} />
         <Route path="/aboutMe" element={<AboutMe />} />
         <Route path="/skills" element={<Skills />} />
-        <Route path="/portfolio" element={<Projects />} />
+        {/* <Route path="/portfolio" element={<Projects />} /> */}
+        <Route path="/portfolio" element={<Modals />} />
       </Routes>
     </Layout>
   );
