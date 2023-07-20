@@ -39,7 +39,7 @@
         padding: 0;
  
         li {
-            font-size: 3.1vw;
+            font-size: min(3.7vw,12px);
             text-transform: uppercase;
         }
     }

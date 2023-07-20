@@ -5,7 +5,7 @@ import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
 // import Projects from "./components/Projects";
 import Layout from "./components/Layout";
-import Modals from "./components/Modals-aml/index";
+import Modals from "./components/Modal/index";
 import "./App.css";
 
 function App() {

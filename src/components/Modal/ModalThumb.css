@@ -40,8 +40,8 @@
     z-index: 4;
 }
 .modalThumb_image img{
-    height: max(380px,35vh);
-    width: max(230px,10vw);
+    height: max(420px,35vh);
+    width: max(250px,10vw);
     border-radius: 25px;
 }
 

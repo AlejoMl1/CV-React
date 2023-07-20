@@ -5,7 +5,7 @@ const ModalThumb = ({ img, title, briefDescription, setIsOpenModal }) => {
   return (
     <div className="modalThumb">
       <h6>{title}</h6>
-      <div className="modalThumb_image">
+      <div onClick={() => setIsOpenModal(true)} className="modalThumb_image">
         <img
           src={img}
           alt="image"
