@@ -32,7 +32,7 @@ export default function FirstSection() {
           </p>
           {/* <!-- cv btn  --> */}
           <a
-            href="/cvpdf/CV-FULLSTACK-AML.pdf"
+            href="/cvpdf/AlejandroMunozFullstackDeveloper.pdf"
             download
             className={styles.cvbtn}
           >
